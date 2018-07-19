@@ -3,9 +3,9 @@
 import socket
 
 TCP_IP = '127.0.0.1'
-TCP_PORT = 64
+TCP_PORT = 40100
 BUFFER_SIZE = 20
-MESSAGE = "c"
+MESSAGE = "a"
 MESSAGE2 = "a\n"
 MESSAGE3 = "b\n"
 MESSAGE4 = "c\n"

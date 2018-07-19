@@ -2,7 +2,7 @@
 
 import socket
 from threading import Thread
-from SocketServer import ThreadingMixIn
+#from SocketServer import ThreadingMixIn
 
 
 class ClientThread(Thread):
@@ -21,7 +21,11 @@ class ClientThread(Thread):
             if data.decode('utf-8') == 'a':
                 resp = "0.1"
                 conn.send(resp.encode('utf-8'))
-                print('Option a')
+                print('Received input asking for version number.')
+            if data.decode('utf-8') == 'version\n':
+                resp = "0.1"
+                conn.send(resp.encode('utf-8'))
+                print('Received input asking for version number.')
             if data.decode('utf-8') == 'b':
                 resp = "0.2"
                 conn.send(resp.encode('utf-8'))
@@ -31,11 +35,11 @@ class ClientThread(Thread):
                 #conn.send(resp.encode('utf-8'))
             '''if not data: break
             print ("received data:", data)'''
-            conn.send(data)  # echo
+            #conn.send(data)  # echo
 
 
 TCP_IP = '127.0.0.1'
-TCP_PORT = 64
+TCP_PORT = 40100
 BUFFER_SIZE = 20  # Normally 1024, but we want fast response
 '''
 #new stuff
