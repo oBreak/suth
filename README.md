@@ -15,6 +15,7 @@ file and how to read the same file.
 - proto-socket-open - Opens a socket and responds based on preset criteria.
 - threaded-socket-responder - Opens a socket that accepts multiple connections and responds based on
 preset criteria.
-- 
+- smtp-send
+- email-text
 
 ##### Notes
