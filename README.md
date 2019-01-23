@@ -19,3 +19,5 @@ preset criteria.
 - email-text
 
 ##### Notes
+
+- Interestingly, web proxy has this blog as a non-trusted site. Lol.
