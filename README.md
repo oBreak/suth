@@ -17,6 +17,7 @@ file and how to read the same file.
 preset criteria.
 - smtp-send
 - email-text
+- commit-bot
 
 ##### Notes
 
