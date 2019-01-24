@@ -1,12 +1,14 @@
 #!/bin/sh
 
-# Doesn't work yet. These are sh, not python.
-
 cd ~/Projects/gh-suth/
+info="Commit: $(date)"
 
-git add .
+echo "$info" >> timestamp.txt
+echo "$info"
+echo
 
-# ^ Only required for first time.
+# Push to repo
 
+git add . # only required for first time
 git commit -m "Commit comment"
 git push
